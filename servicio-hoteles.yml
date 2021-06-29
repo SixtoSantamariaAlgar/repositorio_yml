@@ -1,14 +1,7 @@
 spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver    
-    url: jdbc:mysql://localhost:3307/viajes?serverTimezone=UTC
-    username: root
-    password: root
-  jpa:
-    hibernate:
-      naming:
-        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/viajes
 server:
   port: 8000
 eureka:
